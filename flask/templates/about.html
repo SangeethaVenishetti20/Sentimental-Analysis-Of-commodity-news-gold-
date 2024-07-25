@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" id="about-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-section" class="hidden">
+            <h2>Project Members</h2>
+            <ul id="Members">
+                <li>Member 1</li>
+                <li>Member 2</li>
+                <li>Member 3</li>
+                <li>Member 4</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

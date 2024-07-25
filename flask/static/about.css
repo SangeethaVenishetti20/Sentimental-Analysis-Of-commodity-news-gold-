@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #221f03; /* Light yellow background */
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffd700; /* Gold background */
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
+}
+
+section.hidden {
+    display: none;
+}
+
+section#about-section {
+    background-color: #fff8dc; /* Light goldenrod yellow background */
+    padding: 1em;
+    border: 1px solid #ffd700; /* Gold border */
+    border-radius: 5px;
+}
+.members{
+    color: #fff8dc;
+}

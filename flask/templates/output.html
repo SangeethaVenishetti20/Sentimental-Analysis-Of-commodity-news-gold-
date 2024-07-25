@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>And here comes your Predicton</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/predict">Predict</a>
+                        <a href="/about">about</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="positive_result">
+                {% if  output == 'Upward movement in gold price' %}
+                    <div class="positive">
+                        <img src="{{ url_for('static', filename='positive.jpg') }}" alt="Upward movement in gold price">
+                     <h3>   Upward movement in gold price </h3>
+                    </div>
+                {% elif output == 'Downward movement in gold price' %}
+                    <div class="negative_result">
+                        <img src="{{ url_for('static', filename='negative.jpg') }}" alt="Downwardmovementingoldprice">
+                       <h3> Downward movement in gold price  </h3>
+                    </div>
+                {% elif  output == 'Steady movement in gold price' %}
+                    <div class="neutral_result">
+                        <img src="{{ url_for('static', filename='neutral.png') }}" alt="neutral_result">
+                    <h3> Steady movement in gold price </h3>
+                    </div>
+                    {% elif output == 'This news headline is not related to gold news' %}
+                    <div class="none">
+                        <img src="{{ url_for('static', filename='none.jpg') }} " alt="none"
+                          height="500"
+                          width="500">
+                        <h3>  news headline is not related to gold news </h3>
+                {% else %}
+                <div class="invalid">
+                    <img src="{{ url_for('static', filename='invalid.jpeg') }}" alt="invalid">
+                  <h3>  Prediction not found </h3>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #4b0082;
+    color: green;
+    text-align: center;
+    background: url('template3.jpeg') no-repeat center center fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #4b0082;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main h1 {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+form button:hover {
+    background-color: #ff8c00;
+}
+
+.newsheadline, .predictionresult {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ffa500;
+}
+
+#title{
+    color: aquamarine;
+}
